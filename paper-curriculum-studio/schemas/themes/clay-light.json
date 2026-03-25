@@ -1,0 +1,62 @@
+{
+  "id": "clay-light",
+  "label": "Clay",
+  "appearance": "light",
+  "description": "Warm clay neutrals with terracotta accent—editorial, human warmth.",
+  "css": {
+    "--cur-bg-app": "#f4f0eb",
+    "--cur-bg-elevated": "#fffcf7",
+    "--cur-bg-subtle": "#e8e2da",
+    "--cur-bg-canvas": "#2a2420",
+    "--cur-text-primary": "#2a2420",
+    "--cur-text-secondary": "#5c534c",
+    "--cur-text-tertiary": "#8c8279",
+    "--cur-border": "#d4ccc2",
+    "--cur-border-strong": "#b8aea3",
+    "--cur-accent": "#c45c26",
+    "--cur-accent-muted": "rgba(196, 92, 38, 0.12)",
+    "--cur-focus-ring": "rgba(196, 92, 38, 0.45)",
+    "--cur-success": "#3f6f51",
+    "--cur-warning": "#b45309",
+    "--cur-error": "#b91c1c",
+    "--cur-radius-sm": "8px",
+    "--cur-radius-md": "12px",
+    "--cur-radius-lg": "16px",
+    "--cur-font-sans": "system-ui, -apple-system, Georgia, 'Times New Roman', serif",
+    "--cur-font-mono": "ui-monospace, Menlo, Consolas, monospace",
+    "--cur-shadow-sm": "0 1px 2px rgba(42,36,32,0.06)",
+    "--cur-shadow-md": "0 8px 28px rgba(42,36,32,0.08)",
+    "--cur-content-max": "70ch",
+    "--cur-transition": "180ms ease"
+  },
+  "three": {
+    "background": "#e8e2da",
+    "fog": { "color": "#e8e2da", "near": 8, "far": 48 },
+    "ambientIntensity": 0.45,
+    "directionalColor": "#fff8f0",
+    "directionalIntensity": 0.78,
+    "directionalPosition": [4, 7, 5],
+    "gridColor": "#d4ccc2",
+    "accentHex": "#c45c26"
+  },
+  "manim": {
+    "background": "#f4f0eb",
+    "text": "#2a2420",
+    "accent": "#c45c26",
+    "secondary": "#8c8279",
+    "grid": "#d4ccc2",
+    "highlight": "#3f6f51"
+  },
+  "matplotlib": {
+    "figure.facecolor": "#f4f0eb",
+    "axes.facecolor": "#fffcf7",
+    "axes.edgecolor": "#d4ccc2",
+    "text.color": "#2a2420",
+    "axes.labelcolor": "#5c534c",
+    "xtick.color": "#8c8279",
+    "ytick.color": "#8c8279",
+    "grid.color": "#e8e2da",
+    "grid.alpha": "0.82"
+  },
+  "series_colors": ["#c45c26", "#3f6f51", "#2563eb", "#9333ea", "#b91c1c", "#0d9488"]
+}

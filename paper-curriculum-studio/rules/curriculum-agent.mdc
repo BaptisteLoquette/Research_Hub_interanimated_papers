@@ -1,0 +1,62 @@
+---
+description: "Paper-to-curriculum agent guidance for building visual interactive learning from research papers."
+alwaysApply: false
+globs:
+  - "**/*.ipynb"
+  - "**/curriculum/**"
+  - "**/backend/**"
+  - "**/web/**"
+  - "**/notebooks/**"
+  - "**/schemas/**"
+  - "**/artifacts/**"
+---
+
+# Research visual curriculum — global rules
+
+## Mission
+
+- Transform technical **research papers** into **interactive, visual, minimalist** learning—Jupyter and/or web.
+- Optimize for **deep understanding** (mechanism, limits, connections), not bullet summaries.
+- Assume the learner is **technically strong** but **new to this topic**.
+
+## Artifact order
+
+When building a full pipeline:
+
+1. Structured **outline** + **concept graph** (`paper_outline.json`, `concept_graph.json`).
+2. **`curriculum_outline.json`** (modules → lessons → units, objectives, prerequisites, paper section links, visuals_needed).
+3. **`explanations.json`** + **`visual_specs.json`** (math + scene specs).
+4. **Notebooks** via **nbformat** (programmatic generation preferred for scale).
+5. **Web pages** mirroring outline with richer interaction (e.g. react-three-fiber).
+
+## Math and explanations
+
+For every **nontrivial** formula:
+
+- LaTeX rendering.
+- **Term-by-term** explanation in plain language.
+- **Geometric or physical intuition** when accurate; label guesses.
+
+For algorithms: stepwise narrative + optional pseudocode tied to paper.
+
+## Style and UX
+
+- **Minimal, modern, macOS-like**; keyboard-friendly; large targets; short segments.
+- Follow **experience-design** and skill **ui-ux-learning** for layout and copy.
+
+## Multi-expert use
+
+Delegate via subagents / explicit roles:
+
+- Paper ingestion & concept graph (structure only).
+- Curriculum architect (outline JSON).
+- Math explainer & visual designer (explanations + visual_specs).
+- Notebook builder (nbformat scripts).
+- Web UI builder (Next + R3F + formulas).
+
+Use skill **paper-to-curriculum** as the canonical workflow.
+
+## Tools
+
+- Prefer running **backend** scripts (`ingest_papers.py`, `build_notebooks.py`) when present.
+- Optional: **Manim** for renders; document commands and deps.

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "default_theme_id": "paper-sf-light",
+  "themes": [
+    { "id": "paper-sf-light", "file": "paper-sf-light.json" },
+    { "id": "paper-sf-dark", "file": "paper-sf-dark.json" },
+    { "id": "graphite-dark", "file": "graphite-dark.json" },
+    { "id": "mist-light", "file": "mist-light.json" },
+    { "id": "ink-dark", "file": "ink-dark.json" },
+    { "id": "sage-light", "file": "sage-light.json" },
+    { "id": "harbor-dark", "file": "harbor-dark.json" },
+    { "id": "clay-light", "file": "clay-light.json" }
+  ]
+}

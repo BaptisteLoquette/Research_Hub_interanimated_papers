@@ -1,0 +1,22 @@
+---
+description: Standards for paper-derived curricula—depth, structure, interactivity, and honest sourcing.
+alwaysApply: false
+globs:
+  - "**/*.ipynb"
+  - "**/curriculum/**/*.md"
+  - "**/curriculum/**/*.ipynb"
+---
+
+# Curriculum quality
+
+When authoring or reviewing learning materials from papers:
+
+1. **Source fidelity**: Every non-obvious claim tied to a specific paper section, equation, or figure; distinguish paper results from standard background and from instructor interpretation.
+2. **Learning arc**: Clear outcomes → prerequisites → core ideas → misconceptions → checks (quick questions, mini-labs, or code).
+3. **Depth over trivia**: Prefer mechanistic explanations, abstractions that transfer, and worked examples over bullet lists of definitions.
+4. **Creative connections**: Explicitly link ideas across subfields (e.g. world models ↔ control; RAG ↔ memory in agents) when pedagogically sound; label speculation as such.
+5. **Jupyter**: Runnable cells, minimal env assumptions, reproducible seeds where randomness appears; narrative markdown cells between code.
+6. **Interactive / ReAct-style layers**: When building agents or step-by-step “reasoning aloud” demos, show observation → thought → action loops; keep UI state minimal and debuggable.
+7. **Accessibility**: Alt text for diagrams; readable contrast; avoid relying only on color for meaning.
+8. **Experience design**: Follow `experience-design.mdc` for any UI, interactive, or spatial artifact—minimal chrome, macOS-like calm, 0-friction defaults, ADHD-friendly chunking, technical depth on demand.
+9. **Global mission & math rigor**: Follow `curriculum-agent.mdc` for artifact order, term-by-term formula teaching, and use of `backend/` + `schemas/` when generating notebooks or web.

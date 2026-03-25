@@ -1,0 +1,62 @@
+{
+  "id": "mist-light",
+  "label": "Mist",
+  "appearance": "light",
+  "description": "Cool gray mist with teal accent—calm, low visual noise.",
+  "css": {
+    "--cur-bg-app": "#eef2f6",
+    "--cur-bg-elevated": "#ffffff",
+    "--cur-bg-subtle": "#e2e8f0",
+    "--cur-bg-canvas": "#0f172a",
+    "--cur-text-primary": "#0f172a",
+    "--cur-text-secondary": "#475569",
+    "--cur-text-tertiary": "#94a3b8",
+    "--cur-border": "#cbd5e1",
+    "--cur-border-strong": "#94a3b8",
+    "--cur-accent": "#0d9488",
+    "--cur-accent-muted": "rgba(13, 148, 136, 0.12)",
+    "--cur-focus-ring": "rgba(13, 148, 136, 0.45)",
+    "--cur-success": "#059669",
+    "--cur-warning": "#d97706",
+    "--cur-error": "#dc2626",
+    "--cur-radius-sm": "6px",
+    "--cur-radius-md": "10px",
+    "--cur-radius-lg": "14px",
+    "--cur-font-sans": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+    "--cur-font-mono": "ui-monospace, Menlo, Consolas, monospace",
+    "--cur-shadow-sm": "0 1px 2px rgba(15,23,42,0.05)",
+    "--cur-shadow-md": "0 8px 30px rgba(15,23,42,0.08)",
+    "--cur-content-max": "72ch",
+    "--cur-transition": "160ms ease"
+  },
+  "three": {
+    "background": "#e2e8f0",
+    "fog": { "color": "#e2e8f0", "near": 8, "far": 48 },
+    "ambientIntensity": 0.4,
+    "directionalColor": "#ffffff",
+    "directionalIntensity": 0.85,
+    "directionalPosition": [4, 8, 6],
+    "gridColor": "#cbd5e1",
+    "accentHex": "#0d9488"
+  },
+  "manim": {
+    "background": "#eef2f6",
+    "text": "#0f172a",
+    "accent": "#0d9488",
+    "secondary": "#64748b",
+    "grid": "#cbd5e1",
+    "highlight": "#059669"
+  },
+  "matplotlib": {
+    "figure.facecolor": "#eef2f6",
+    "axes.facecolor": "#ffffff",
+    "axes.edgecolor": "#cbd5e1",
+    "text.color": "#0f172a",
+    "axes.labelcolor": "#475569",
+    "xtick.color": "#64748b",
+    "ytick.color": "#64748b",
+    "grid.color": "#e2e8f0",
+    "grid.alpha": "0.85"
+  },
+  "series_colors": ["#0d9488", "#2563eb", "#d97706", "#7c3aed", "#dc2626", "#0891b2"]
+}

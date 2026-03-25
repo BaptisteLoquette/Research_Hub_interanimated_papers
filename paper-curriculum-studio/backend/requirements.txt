@@ -1,0 +1,2 @@
+# Core: programmatic notebooks
+nbformat>=5.10,<6

@@ -1,0 +1,62 @@
+{
+  "id": "harbor-dark",
+  "label": "Harbor",
+  "appearance": "dark",
+  "description": "Deep blue-gray harbor with ice-blue accent—spatial diagrams pop.",
+  "css": {
+    "--cur-bg-app": "#0c1117",
+    "--cur-bg-elevated": "#151b24",
+    "--cur-bg-subtle": "#1c2430",
+    "--cur-bg-canvas": "#070a0e",
+    "--cur-text-primary": "#e8eef7",
+    "--cur-text-secondary": "#8fa3bf",
+    "--cur-text-tertiary": "#5c6b82",
+    "--cur-border": "#243044",
+    "--cur-border-strong": "#36445c",
+    "--cur-accent": "#7dd3fc",
+    "--cur-accent-muted": "rgba(125, 211, 252, 0.12)",
+    "--cur-focus-ring": "rgba(125, 211, 252, 0.5)",
+    "--cur-success": "#4ade80",
+    "--cur-warning": "#fbbf24",
+    "--cur-error": "#fb7185",
+    "--cur-radius-sm": "6px",
+    "--cur-radius-md": "10px",
+    "--cur-radius-lg": "14px",
+    "--cur-font-sans": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+    "--cur-font-mono": "ui-monospace, Menlo, Consolas, monospace",
+    "--cur-shadow-sm": "0 1px 2px rgba(0,0,0,0.45)",
+    "--cur-shadow-md": "0 10px 36px rgba(0,0,0,0.5)",
+    "--cur-content-max": "72ch",
+    "--cur-transition": "160ms ease"
+  },
+  "three": {
+    "background": "#151b24",
+    "fog": { "color": "#151b24", "near": 6, "far": 42 },
+    "ambientIntensity": 0.26,
+    "directionalColor": "#dce8ff",
+    "directionalIntensity": 0.72,
+    "directionalPosition": [5, 8, 6],
+    "gridColor": "#243044",
+    "accentHex": "#7dd3fc"
+  },
+  "manim": {
+    "background": "#0c1117",
+    "text": "#e8eef7",
+    "accent": "#7dd3fc",
+    "secondary": "#8fa3bf",
+    "grid": "#243044",
+    "highlight": "#4ade80"
+  },
+  "matplotlib": {
+    "figure.facecolor": "#0c1117",
+    "axes.facecolor": "#151b24",
+    "axes.edgecolor": "#243044",
+    "text.color": "#e8eef7",
+    "axes.labelcolor": "#8fa3bf",
+    "xtick.color": "#5c6b82",
+    "ytick.color": "#5c6b82",
+    "grid.color": "#1c2430",
+    "grid.alpha": "0.88"
+  },
+  "series_colors": ["#7dd3fc", "#4ade80", "#fbbf24", "#c084fc", "#fb7185", "#38bdf8"]
+}

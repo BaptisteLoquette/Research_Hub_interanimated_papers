@@ -1,0 +1,73 @@
+---
+description: 
+globs: **/*.ipynb, **/curriculum/**, **/interactive/**, **/visual/**, **/web/**, **/backend/**, **/*.{html,css,scss,tsx,jsx,vue,svelte}
+alwaysApply: false
+---
+
+---
+description: Minimal, macOS-like, zero-friction UX for curriculum UIs, interactives, and spatial materials—ADHD-friendly and research-dense capable.
+alwaysApply: false
+globs:
+  - "**/*.ipynb"
+  - "**/curriculum/**"
+  - "**/interactive/**"
+  - "**/visual/**"
+  - "**/web/**"
+  - "**/backend/**"
+  - "**/*.{html,css,scss,tsx,jsx,vue,svelte}"
+---
+
+# Experience design (minimal, spatial, research-ready)
+
+Apply to **any** notebook, web interactive, Remotion/visual artifact, or doc this plugin helps author.
+
+## North star
+
+**Minimal · 0 friction · modern · macOS-like · efficient for visual/spatial thinking · supportive of ADHD workflows · respectful of high technical depth.**
+
+## Visual and spatial
+
+1. **Three-pane learning layout** (desktop): **left** = outline/TOC (modules → lessons); **center** = primary visual + short explanation; **right** = optional details (derivations, code, refs)—**collapsible** and visually subordinate. Stack to a single column on small screens **in that order**.
+2. **One focal plane**: Primary content gets the calmest background; secondary tools sit in a lighter visual tier—never compete at equal weight.
+3. **Spatial consistency**: Same regions for the same jobs every screen. Avoid rearranging chrome between steps.
+4. **Diagrams first when they beat prose**: Use maps, timelines, graphs, or canvases for structure; pair with **short** captions. Prefer **legible scale** (readable labels, no micro-text).
+5. **Progressive disclosure**: Default shows the **minimum** needed to understand the current step; depth in **collapsible** blocks, drawers, or “expert” toggles—not walls of text up front.
+6. **Chunked copy**: Avoid paragraphs longer than **four short lines** without a structural break (heading, list, or step).
+
+## macOS-like modern UI
+
+1. **Typography**: Prefer **system UI stack** where applicable (e.g. San Francisco on Apple platforms); clear hierarchy (few sizes, consistent weights). Avoid decorative display fonts for body or dense research UI.
+2. **Whitespace**: Generous padding; restrained line length for reading; align to a simple grid.
+3. **Color**: Mostly neutrals; **one** accent for primary actions and links. Avoid rainbow chrome and heavy gradients unless they encode data.
+4. **Motion**: Subtle, short, purposeful (orientation, not spectacle). Respect **reduced motion** (`prefers-reduced-motion`).
+5. **Controls**: Native-feel buttons, sliders, segmented controls; clear hover/focus/disabled states; **visible focus rings** for keyboard users.
+
+## Zero friction
+
+1. **Time-to-value**: The learner reaches a meaningful insight or interaction in the **fewest steps** after open—no mandatory signup fiction, no long intros.
+2. **Sane defaults**: Sliders and sims open on a state that **instantly** illustrates the phenomenon; parameters are optional refinements.
+3. **Obvious next action**: One clear primary CTA per view (“Run”, “Next step”, “Show derivation”).
+4. **Recoverability**: Undo, reset, or “back to default” for exploratory UIs; notebooks keep a **single setup cell** at top.
+5. **Keyboard-first (web)**: Document or implement unit navigation (`J`/`K` or arrows), visible focus rings, and primary actions reachable from keyboard.
+6. **Progress landmarks**: Breadcrumb or trail (`Module → Lesson → Unit`); simple completion markers—no noisy gamification.
+
+## ADHD-friendly (without dumbing down)
+
+1. **Chunking**: Small wins per section; headings and whitespace break scanning fatigue.
+2. **Predictable rhythm**: Same pattern per unit (goal → idea → try → check); avoid surprise layout shifts.
+3. **Reduce simultaneous demands**: No autoplay audio + mandatory reading + flashing UI; one primary channel.
+4. **Optional stimulation**: Motion and rich visuals **on learner initiation** (click to animate, expand to see proof).
+5. **External brain**: Visible **where you are** in the path (progress, mini-map, or outline)—spatial, not only linear.
+
+## High technical research
+
+1. **Density on demand**: Offer **collapsed** derivations, proofs, and citations; default view stays light; experts expand.
+2. **Precise language** in expanded regions; keep labels in chrome **short** and link to rigor.
+3. **Source hooks**: Footnotes, margin links, or “paper §” callouts—**scannable**, not buried in prose.
+
+## Anti-patterns
+
+- Busy dashboards with equal-weight panels.
+- Decorative animation, parallax, or gamification that obscures the concept.
+- Mystery meat navigation or icon-only critical actions without labels.
+- Infinite scroll for sequential learning without landmarks.

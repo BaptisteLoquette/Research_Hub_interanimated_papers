@@ -1,0 +1,62 @@
+{
+  "id": "ink-dark",
+  "label": "Ink",
+  "appearance": "dark",
+  "description": "High-contrast ink for dense notation and long proofs.",
+  "css": {
+    "--cur-bg-app": "#0a0a0b",
+    "--cur-bg-elevated": "#141416",
+    "--cur-bg-subtle": "#1c1c1f",
+    "--cur-bg-canvas": "#000000",
+    "--cur-text-primary": "#fafafa",
+    "--cur-text-secondary": "#a1a1aa",
+    "--cur-text-tertiary": "#71717a",
+    "--cur-border": "#27272a",
+    "--cur-border-strong": "#3f3f46",
+    "--cur-accent": "#eab308",
+    "--cur-accent-muted": "rgba(234, 179, 8, 0.14)",
+    "--cur-focus-ring": "rgba(234, 179, 8, 0.55)",
+    "--cur-success": "#22c55e",
+    "--cur-warning": "#f59e0b",
+    "--cur-error": "#ef4444",
+    "--cur-radius-sm": "4px",
+    "--cur-radius-md": "8px",
+    "--cur-radius-lg": "12px",
+    "--cur-font-sans": "system-ui, -apple-system, sans-serif",
+    "--cur-font-mono": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "--cur-shadow-sm": "0 1px 2px rgba(0,0,0,0.6)",
+    "--cur-shadow-md": "0 10px 40px rgba(0,0,0,0.65)",
+    "--cur-content-max": "78ch",
+    "--cur-transition": "120ms ease"
+  },
+  "three": {
+    "background": "#141416",
+    "fog": { "color": "#141416", "near": 4, "far": 35 },
+    "ambientIntensity": 0.18,
+    "directionalColor": "#ffffff",
+    "directionalIntensity": 0.95,
+    "directionalPosition": [3, 6, 4],
+    "gridColor": "#27272a",
+    "accentHex": "#eab308"
+  },
+  "manim": {
+    "background": "#0a0a0b",
+    "text": "#fafafa",
+    "accent": "#eab308",
+    "secondary": "#a1a1aa",
+    "grid": "#27272a",
+    "highlight": "#22c55e"
+  },
+  "matplotlib": {
+    "figure.facecolor": "#0a0a0b",
+    "axes.facecolor": "#141416",
+    "axes.edgecolor": "#27272a",
+    "text.color": "#fafafa",
+    "axes.labelcolor": "#a1a1aa",
+    "xtick.color": "#71717a",
+    "ytick.color": "#71717a",
+    "grid.color": "#1c1c1f",
+    "grid.alpha": "0.95"
+  },
+  "series_colors": ["#eab308", "#22c55e", "#38bdf8", "#a78bfa", "#f97316", "#f43f5e"]
+}

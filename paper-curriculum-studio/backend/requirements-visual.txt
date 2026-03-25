@@ -1,0 +1,2 @@
+# Optional: Manim math animations (large install). Use only when rendering backend/visuals scenes.
+# manim>=0.19

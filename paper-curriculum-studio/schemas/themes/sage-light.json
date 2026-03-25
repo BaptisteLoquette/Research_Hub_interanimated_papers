@@ -1,0 +1,62 @@
+{
+  "id": "sage-light",
+  "label": "Sage",
+  "appearance": "light",
+  "description": "Muted sage green accent on warm white—soft focus, low stimulation.",
+  "css": {
+    "--cur-bg-app": "#f7f7f4",
+    "--cur-bg-elevated": "#ffffff",
+    "--cur-bg-subtle": "#ecece8",
+    "--cur-bg-canvas": "#2d2d2a",
+    "--cur-text-primary": "#2d2d2a",
+    "--cur-text-secondary": "#5c5c57",
+    "--cur-text-tertiary": "#8a8a84",
+    "--cur-border": "#d6d6d0",
+    "--cur-border-strong": "#b9b9b0",
+    "--cur-accent": "#4f6f52",
+    "--cur-accent-muted": "rgba(79, 111, 82, 0.12)",
+    "--cur-focus-ring": "rgba(79, 111, 82, 0.45)",
+    "--cur-success": "#3d7c47",
+    "--cur-warning": "#b45309",
+    "--cur-error": "#b91c1c",
+    "--cur-radius-sm": "8px",
+    "--cur-radius-md": "12px",
+    "--cur-radius-lg": "16px",
+    "--cur-font-sans": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+    "--cur-font-mono": "ui-monospace, Menlo, Consolas, monospace",
+    "--cur-shadow-sm": "0 1px 2px rgba(45,45,42,0.05)",
+    "--cur-shadow-md": "0 6px 28px rgba(45,45,42,0.07)",
+    "--cur-content-max": "72ch",
+    "--cur-transition": "180ms ease"
+  },
+  "three": {
+    "background": "#ecece8",
+    "fog": { "color": "#ecece8", "near": 9, "far": 50 },
+    "ambientIntensity": 0.42,
+    "directionalColor": "#fffef8",
+    "directionalIntensity": 0.8,
+    "directionalPosition": [4, 7, 5],
+    "gridColor": "#d6d6d0",
+    "accentHex": "#4f6f52"
+  },
+  "manim": {
+    "background": "#f7f7f4",
+    "text": "#2d2d2a",
+    "accent": "#4f6f52",
+    "secondary": "#8a8a84",
+    "grid": "#d6d6d0",
+    "highlight": "#3d7c47"
+  },
+  "matplotlib": {
+    "figure.facecolor": "#f7f7f4",
+    "axes.facecolor": "#ffffff",
+    "axes.edgecolor": "#d6d6d0",
+    "text.color": "#2d2d2a",
+    "axes.labelcolor": "#5c5c57",
+    "xtick.color": "#8a8a84",
+    "ytick.color": "#8a8a84",
+    "grid.color": "#ecece8",
+    "grid.alpha": "0.8"
+  },
+  "series_colors": ["#4f6f52", "#2f6690", "#b45309", "#6b4f8c", "#b91c1c", "#0f766e"]
+}

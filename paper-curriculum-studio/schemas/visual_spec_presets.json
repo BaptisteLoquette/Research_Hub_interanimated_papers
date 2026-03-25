@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "description": "Reusable visual_spec templates for math-visual-designer and web-ui-builder. Merge preset into each visual_specs.json entry; set theme_id to pick palette.",
+  "presets": [
+    {
+      "id": "vector_field_2d",
+      "label": "2D vector field",
+      "pedagogy": "Show direction and magnitude over a plane; good for flows, gradients, dynamics.",
+      "modalities": ["jupyter_plot", "react_three_fiber", "manim_scene"],
+      "visual_spec_template": {
+        "type": "react_three_fiber",
+        "parameters": {
+          "preset": "vector_field_2d",
+          "grid_n": 16,
+          "normalize": true,
+          "arrow_scale": 0.35,
+          "plane_size": 4
+        }
+      },
+      "manim_hint": "ArrowVectorField or VectorField from manim; use theme accent for vectors, muted grid.",
+      "jupyter_hint": "quiver on np.meshgrid; equal aspect; series_colors[0] for arrows.",
+      "default_theme_id": "paper-sf-light"
+    },
+    {
+      "id": "graph_concept",
+      "label": "Concept graph",
+      "pedagogy": "Prerequisite / uses / extends structure from concept_graph.json.",
+      "modalities": ["static_svg", "react_three_fiber", "jupyter_plot"],
+      "visual_spec_template": {
+        "type": "static_svg",
+        "parameters": {
+          "preset": "graph_concept",
+          "layout": "force_or_layered",
+          "edge_curvature": 0.15,
+          "show_labels": true
+        }
+      },
+      "manim_hint": "GraphScene or NetworkMobject-style layout; fade in by topological wave.",
+      "jupyter_hint": "networkx + matplotlib; node color from theme series_colors.",
+      "default_theme_id": "graphite-dark"
+    },
+    {
+      "id": "probability_simplex",
+      "label": "Probability / simplex",
+      "pedagogy": "3-class or n-simplex intuition; Bayesian updates as motion inside simplex.",
+      "modalities": ["react_three_fiber", "manim_scene"],
+      "visual_spec_template": {
+        "type": "react_three_fiber",
+        "parameters": {
+          "preset": "probability_simplex",
+          "dimension": 3,
+          "show_barycentric_grid": true
+        }
+      },
+      "manim_hint": "Triangle in 2D or tetra wireframe in 3D; dot for posterior.",
+      "jupyter_hint": "2D simplex with plt.fill; trajectory as line.",
+      "default_theme_id": "sage-light"
+    },
+    {
+      "id": "latent_manifold",
+      "label": "Latent manifold sketch",
+      "pedagogy": "Surface or 2D embedding with observation arrows; VAE/GAN/world-model intros.",
+      "modalities": ["react_three_fiber", "manim_scene"],
+      "visual_spec_template": {
+        "type": "react_three_fiber",
+        "parameters": {
+          "preset": "latent_manifold",
+          "surface_resolution": 32,
+          "show_encoder_arrow": true
+        }
+      },
+      "manim_hint": "ParametricSurface + moving Dot3D along geodesic.",
+      "jupyter_hint": "3D surface plot; optional trajectory.",
+      "default_theme_id": "harbor-dark"
+    },
+    {
+      "id": "loss_landscape",
+      "label": "Loss landscape (toy)",
+      "pedagogy": "Convex vs non-convex intuition; SGD noise optional.",
+      "modalities": ["jupyter_plot", "react_three_fiber", "manim_scene"],
+      "visual_spec_template": {
+        "type": "jupyter_plot",
+        "parameters": {
+          "preset": "loss_landscape",
+          "resolution": 80,
+          "contour_levels": 12
+        }
+      },
+      "manim_hint": "Surface + moving point; camera orbit slow.",
+      "jupyter_hint": "contourf + path overlay.",
+      "default_theme_id": "mist-light"
+    },
+    {
+      "id": "agent_react_loop",
+      "label": "ReAct / agent loop",
+      "pedagogy": "Observation → thought → action timeline; tool calls as branches.",
+      "modalities": ["static_svg", "react_three_fiber", "embed_video"],
+      "visual_spec_template": {
+        "type": "react_three_fiber",
+        "parameters": {
+          "preset": "agent_react_loop",
+          "orientation": "horizontal",
+          "steps": ["observe", "think", "act", "observe"]
+        }
+      },
+      "manim_hint": "Succession of rectangles + arrows; color code phase with theme accent.",
+      "jupyter_hint": "matplotlib timeline or graphviz export.",
+      "default_theme_id": "paper-sf-dark"
+    },
+    {
+      "id": "circuit_graph",
+      "label": "Circuit / netlist graph",
+      "pedagogy": "EDA: gates, nets, hierarchical blocks.",
+      "modalities": ["static_svg", "react_three_fiber"],
+      "visual_spec_template": {
+        "type": "static_svg",
+        "parameters": {
+          "preset": "circuit_graph",
+          "orthogonal_routing": true,
+          "pin_labels": true
+        }
+      },
+      "manim_hint": "Build module blocks as rectangles; animated signal flow along edges.",
+      "jupyter_hint": "networkx with custom node shapes or SVG export.",
+      "default_theme_id": "ink-dark"
+    },
+    {
+      "id": "rag_index_stack",
+      "label": "RAG index layers",
+      "pedagogy": "Corpus → chunks → embeddings → retriever → context window.",
+      "modalities": ["static_svg", "manim_scene"],
+      "visual_spec_template": {
+        "type": "static_svg",
+        "parameters": {
+          "preset": "rag_index_stack",
+          "layers": ["documents", "chunks", "vectors", "top_k", "prompt"]
+        }
+      },
+      "manim_hint": "VGroup stacks; TransformMatchingShapes between stages.",
+      "jupyter_hint": "Horizontal swimlanes in matplotlib.",
+      "default_theme_id": "graphite-dark"
+    },
+    {
+      "id": "bloch_sphere",
+      "label": "Bloch / qubit state",
+      "pedagogy": "Quantum state as vector on sphere; rotations as paths.",
+      "modalities": ["react_three_fiber", "manim_scene"],
+      "visual_spec_template": {
+        "type": "react_three_fiber",
+        "parameters": {
+          "preset": "bloch_sphere",
+          "show_axes": true,
+          "state_vector": [0, 0, 1]
+        }
+      },
+      "manim_hint": "Sphere + Arrow3D; rotation animation.",
+      "jupyter_hint": "mpl_toolkits 3D quiver on sphere mesh.",
+      "default_theme_id": "harbor-dark"
+    },
+    {
+      "id": "attention_heatmap",
+      "label": "Attention heatmap",
+      "pedagogy": "Transformer / retrieval cross-attention patterns.",
+      "modalities": ["jupyter_plot", "embed_video"],
+      "visual_spec_template": {
+        "type": "jupyter_plot",
+        "parameters": {
+          "preset": "attention_heatmap",
+          "color_map": "themed_coolwarm",
+          "cell_border": false
+        }
+      },
+      "manim_hint": "ImageMobject from array; highlight row/col sweep.",
+      "jupyter_hint": "imshow with vmin/vmax; theme-aware colormap from series_colors.",
+      "default_theme_id": "paper-sf-light"
+    },
+    {
+      "id": "world_model_rollout",
+      "label": "World model rollout",
+      "pedagogy": "Latent state x_t, action a_t, predicted x_{t+1}; MPC slice.",
+      "modalities": ["react_three_fiber", "manim_scene", "jupyter_plot"],
+      "visual_spec_template": {
+        "type": "react_three_fiber",
+        "parameters": {
+          "preset": "world_model_rollout",
+          "horizon": 5,
+          "show_uncertainty": true
+        }
+      },
+      "manim_hint": "Time axis + latent blobs fanning out.",
+      "jupyter_hint": "Ribbon plot or step-wise subplot grid.",
+      "default_theme_id": "mist-light"
+    },
+    {
+      "id": "equation_term_highlight",
+      "label": "Equation term highlight",
+      "pedagogy": "Sync term-by-term with color and motion (3b1b style).",
+      "modalities": ["manim_scene", "embed_video"],
+      "visual_spec_template": {
+        "type": "manim_scene",
+        "parameters": {
+          "preset": "equation_term_highlight",
+          "latex": "",
+          "terms": []
+        }
+      },
+      "manim_hint": "MathTex with indices; IndicateThenFade or SurroundingRectangle per term.",
+      "jupyter_hint": "IPython.display with manual HTML+CSS or Manim render to GIF.",
+      "default_theme_id": "clay-light"
+    }
+  ]
+}

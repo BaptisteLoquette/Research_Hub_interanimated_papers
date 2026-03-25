@@ -1,0 +1,29 @@
+[
+  {
+    "id": "marginal-integral-3d",
+    "lesson_id": "marginal-integral",
+    "theme_id": "paper-sf-light",
+    "type": "react_three_fiber",
+    "description": "Latent z axis with stacked conditional slices illustrating marginalization.",
+    "parameters": {
+      "preset": "latent_manifold",
+      "surface_resolution": 28,
+      "show_encoder_arrow": false
+    },
+    "tsx_component": "MarginalIntegralScene",
+    "data_refs": ["explanations.json#marginal-p-x"]
+  },
+  {
+    "id": "concept-map-foundations",
+    "lesson_id": "marginal-integral",
+    "theme_id": "graphite-dark",
+    "type": "static_svg",
+    "description": "Mini concept graph for prerequisites of marginalization.",
+    "parameters": {
+      "preset": "graph_concept",
+      "layout": "layered",
+      "show_labels": true
+    },
+    "data_refs": ["concept_graph.json"]
+  }
+]

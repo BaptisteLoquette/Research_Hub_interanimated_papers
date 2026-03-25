@@ -1,0 +1,10 @@
+{
+  "marginal-p-x": {
+    "title": "Marginal p(x)",
+    "latex": "p(x) = \\int p(x \\mid z) p(z) \\, dz",
+    "plain_explanation": "The data distribution is a mixture of likelihoods under the latent prior.",
+    "term_by_term": "- **p(x)**: density of observations.\n- **p(x|z)**: how data is generated given latent z.\n- **p(z)**: prior over latents.\n- **∫ dz**: sum (integrate) over all possible z.",
+    "intuition_geometric": "Each z induces a slice p(x|z); stacking and weighting by p(z) forms the observed cloud of x.",
+    "code_example": "import numpy as np\n# toy: sample z ~ N(0,1), x|z ~ N(z, 0.1)\nz = np.random.randn(1000)\nx = z + np.random.randn(1000) * 0.1\nprint(x.mean(), x.std())"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "paper-sf-light",
+  "label": "Paper · Light",
+  "appearance": "light",
+  "description": "Apple-style neutrals, single blue accent—default for daytime study.",
+  "css": {
+    "--cur-bg-app": "#f5f5f7",
+    "--cur-bg-elevated": "#ffffff",
+    "--cur-bg-subtle": "#e8e8ed",
+    "--cur-bg-canvas": "#1c1c1e",
+    "--cur-text-primary": "#1d1d1f",
+    "--cur-text-secondary": "#636366",
+    "--cur-text-tertiary": "#8e8e93",
+    "--cur-border": "#d2d2d7",
+    "--cur-border-strong": "#aeaeb2",
+    "--cur-accent": "#007aff",
+    "--cur-accent-muted": "rgba(0, 122, 255, 0.12)",
+    "--cur-focus-ring": "rgba(0, 122, 255, 0.45)",
+    "--cur-success": "#34c759",
+    "--cur-warning": "#ff9500",
+    "--cur-error": "#ff3b30",
+    "--cur-radius-sm": "6px",
+    "--cur-radius-md": "10px",
+    "--cur-radius-lg": "14px",
+    "--cur-font-sans": "system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif",
+    "--cur-font-mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+    "--cur-shadow-sm": "0 1px 2px rgba(0,0,0,0.06)",
+    "--cur-shadow-md": "0 4px 24px rgba(0,0,0,0.08)",
+    "--cur-content-max": "72ch",
+    "--cur-transition": "160ms ease"
+  },
+  "three": {
+    "background": "#e8e8ed",
+    "fog": { "color": "#e8e8ed", "near": 8, "far": 45 },
+    "ambientIntensity": 0.38,
+    "directionalColor": "#ffffff",
+    "directionalIntensity": 0.9,
+    "directionalPosition": [4.5, 8, 6],
+    "gridColor": "#c7c7cc",
+    "accentHex": "#007aff"
+  },
+  "manim": {
+    "background": "#f5f5f7",
+    "text": "#1d1d1f",
+    "accent": "#007aff",
+    "secondary": "#86868b",
+    "grid": "#d2d2d7",
+    "highlight": "#34c759"
+  },
+  "matplotlib": {
+    "figure.facecolor": "#f5f5f7",
+    "axes.facecolor": "#ffffff",
+    "axes.edgecolor": "#d2d2d7",
+    "text.color": "#1d1d1f",
+    "axes.labelcolor": "#424245",
+    "xtick.color": "#636366",
+    "ytick.color": "#636366",
+    "grid.color": "#e5e5ea",
+    "grid.alpha": "0.8"
+  },
+  "series_colors": ["#007aff", "#34c759", "#ff9500", "#af52de", "#ff3b30", "#5ac8fa"]
+}

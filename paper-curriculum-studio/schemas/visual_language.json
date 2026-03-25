@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "description": "Cross-theme defaults for motion, type scale, and 3D readability. Per-theme overrides live in schemas/themes/*.json.",
+  "motion": {
+    "duration_fast_ms": 120,
+    "duration_normal_ms": 160,
+    "duration_slow_ms": 280,
+    "easing_standard": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "reduced_motion_fallback": "0.01ms"
+  },
+  "layout": {
+    "pane_left_width_rem": 14,
+    "pane_right_width_rem": 18,
+    "pane_min_width_px": 240,
+    "canvas_min_height_px": 320,
+    "content_max_width_ch": 72
+  },
+  "typography_scale_rem": {
+    "xs": 0.75,
+    "sm": 0.8125,
+    "base": 0.9375,
+    "md": 1.0625,
+    "lg": 1.25,
+    "xl": 1.5,
+    "display": 1.75
+  },
+  "three_defaults": {
+    "camera_fov": 50,
+    "camera_near": 0.1,
+    "camera_far": 200,
+    "orbit_enable_damping": true,
+    "orbit_damping_factor": 0.05,
+    "pixel_ratio_max": 2
+  },
+  "jupyter_plot": {
+    "dpi": 120,
+    "figsize_default": [6.5, 4.0],
+    "style_hint": "Use theme series_colors; thin spines; grid on y only unless both needed."
+  },
+  "manim_defaults": {
+    "frame_width": 14.2,
+    "frame_height": 8.0,
+    "default_font": "sans-serif",
+    "tex_template_hint": "Use manim theme colors for Tex/MathTex; avoid rainbow fills."
+  }
+}

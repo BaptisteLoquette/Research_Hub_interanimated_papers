@@ -1,0 +1,22 @@
+{
+  "modules": [
+    {
+      "id": "foundations",
+      "title": "Foundations: latent variables and marginals",
+      "lessons": [
+        {
+          "id": "marginal-integral",
+          "title": "Marginalization as an integral",
+          "objectives": [
+            "Read p(x) as an integral over latent z",
+            "Connect to Monte Carlo and variational views"
+          ],
+          "prerequisites": [],
+          "paper_links": ["methods"],
+          "visuals_needed": ["marginal-integral-3d"],
+          "concept_ids": ["marginal-p-x"]
+        }
+      ]
+    }
+  ]
+}
