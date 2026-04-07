@@ -1,0 +1,54 @@
+#+title: ${title}
+#+created: %U
+#+filetags: :literature:research:
+#+ROAM_REFS: ${ref}
+
+* Metadata
+- Author(s): 
+- Year: 
+- DOI/URL: 
+- Journal/Venue: 
+- Keywords: 
+- PDF: [[file:]]
+
+* Abstract/Summary
+
+* Key Ideas
+- 
+
+* Methodology
+** Approach
+
+** Data / Sample
+
+** Analysis
+
+* Findings
+** Main Results
+
+** Null/Negative Results
+
+** Limitations
+
+* Connections
+- Related to: 
+- Builds on: 
+- Contradicts: 
+- Extended by: 
+
+* My Thoughts
+** Strengths of this paper
+
+** Weaknesses / open questions
+
+** How this relates to my research
+
+* Quotes
+#+begin_quote
+[Quote here — include page/section reference]
+#+end_quote
+
+* Tasks
+- [ ] Write a summary in my own words
+- [ ] Link to related notes
+- [ ] Add to reading list if not already there
