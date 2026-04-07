@@ -1,0 +1,47 @@
+#+title: ${title}
+#+created: %U
+#+filetags: :concept:
+
+* One-Line Definition
+(Complete this first — forces clarity)
+
+* Full Definition
+Expand on the one-liner. Be precise.
+
+* Why It Matters
+What becomes possible / explainable when you understand this concept?
+
+* Intuition / Mental Model
+Explain it as if to a smart non-expert. Analogies welcome.
+
+* Formal Statement (if applicable)
+#+begin_quote
+[Mathematical or formal definition here]
+#+end_quote
+
+* Examples
+- Concrete example 1: 
+- Concrete example 2: 
+- Counter-example: 
+
+* Common Misconceptions
+- People often think X, but actually Y because...
+
+* Connections
+** Is a type of
+- 
+
+** Relates to
+- 
+
+** Contrasts with
+- 
+
+** Required to understand
+- 
+
+* Sources / References
+- 
+
+* Open Questions About This Concept
+- 

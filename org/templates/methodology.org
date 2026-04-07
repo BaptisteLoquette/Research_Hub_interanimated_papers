@@ -1,0 +1,60 @@
+#+title: ${title}
+#+created: %U
+#+filetags: :methodology:
+
+* What Is This Method?
+One-paragraph summary.
+
+* When to Use It
+** Best suited for
+- 
+
+** Not appropriate when
+- 
+
+* Prerequisites
+- Required knowledge: 
+- Required data/resources: 
+
+* Step-by-Step Protocol
+1. 
+2. 
+3. 
+
+* Key Parameters & Decisions
+| Parameter | Options | Guidance |
+|-----------|---------|----------|
+|           |         |          |
+
+* Worked Example
+(A concrete, minimal example demonstrating the method)
+
+* Strengths
+- 
+
+* Limitations / Caveats
+- 
+
+* Common Pitfalls
+- 
+
+* Variants / Related Methods
+| Variant | Difference | When to Prefer |
+|---------|------------|----------------|
+|         |            |                |
+
+* Examples in Literature
+- [[file:][Paper 1]] uses this because...
+- 
+
+* Software / Tools
+| Tool | Language | Notes |
+|------|----------|-------|
+|      |          |       |
+
+* My Experience With This Method
+** What worked
+
+** What didn't
+
+** Open questions

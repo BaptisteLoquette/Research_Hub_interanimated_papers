@@ -1,0 +1,58 @@
+#+title: ${title}
+#+created: %U
+#+filetags: :research:project:
+
+* Overview
+Brief description of this research project.
+
+* Research Question(s)
+- Primary: 
+- Secondary: 
+
+* Hypotheses
+- H1: 
+- H2: 
+
+* Motivation
+Why does this research matter?
+
+* Methodology
+** Approach
+(Qualitative / Quantitative / Mixed / Computational / Theoretical)
+
+** Data Sources
+- 
+
+** Tools & Software
+- 
+
+** Timeline
+| Phase | Description | Start | End | Status |
+|-------|-------------|-------|-----|--------|
+|       |             |       |     |        |
+
+* Literature Review
+** Key Papers
+- [[file:][Paper 1]]
+- 
+
+** Gaps This Work Addresses
+
+* Findings
+** Key Results
+
+** Unexpected Results
+
+** Null Results
+
+* Related Work
+- Builds on: 
+- Differs from: 
+
+* Open Questions
+- 
+
+* Next Steps
+** TODO [#A] 
+
+* Notes & Scratch

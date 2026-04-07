@@ -1,0 +1,58 @@
+#+title: ${title}
+#+created: %U
+#+filetags: :interanimated:dialogue:
+
+* Papers in Dialogue
+- Paper A: [[file:][]] 
+- Paper B: [[file:][]] 
+
+(Add more papers if this is a multi-paper conversation)
+- Paper C: 
+
+* Publication Timeline
+| Paper | Year | Key Claim |
+|-------|------|-----------|
+|       |      |           |
+
+* Nature of Interaction
+Mark all that apply:
+
+- [ ] Builds upon   — B extends/applies A's framework
+- [ ] Contradicts   — B challenges A's core claims with evidence
+- [ ] Extends       — B expands A's scope or method
+- [ ] Synthesizes   — merges ideas from A and B (or more)
+- [ ] Critiques     — methodological or conceptual criticism
+- [ ] Responds to   — direct response/rebuttal
+- [ ] Ignores       — notable non-citation (why?)
+
+* Key Points of Contact
+** Shared concepts / terminology
+- 
+
+** Where they agree
+
+** Where they disagree
+
+** What one assumes that the other questions
+
+* Emergent Insights
+(Ideas that only appear when reading these papers together)
+- 
+
+* Intellectual Genealogy
+How did idea X travel from paper A → B → C?
+
+* Gaps in the Dialogue
+What question do these papers collectively fail to address?
+- 
+
+* Implications for My Research
+** What this dialogue suggests I should do
+
+** What I should cite / engage with
+
+** Open questions this raises for me
+- 
+
+* Related Interanimated Dialogues
+- [[file:][]]
