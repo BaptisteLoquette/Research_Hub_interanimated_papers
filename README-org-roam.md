@@ -198,12 +198,13 @@ org/
 ## Keybinding Cheat Sheet
 
 All commands live under the **`C-c n`** prefix.  
-Press `C-c n` alone to open the interactive menu (transient/hydra).
+Press `C-c n m` to open the interactive menu (transient/hydra).
 
 ### 📝 Capture
 
 | Key | Action | When to use |
 |-----|--------|-------------|
+| `C-c n m` | Open **command menu** (all commands) | Discoverability / new users |
 | `C-c n n` | Find or **create** a note | THE key — use constantly |
 | `C-c n c` | Capture menu (choose template) | When you want a specific template |
 | `C-c n d` | Go to **today's** daily | Morning intentions, daily log |

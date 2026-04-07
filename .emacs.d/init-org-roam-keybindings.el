@@ -75,8 +75,9 @@
      ("t"   "Add tag"               org-roam-tag-add)
      ("C"   "Capture (menu)"        org-roam-capture)])
 
-  ;; Bind the menu to C-c n (overrides individual C-c n * bindings when menu is desired).
-  (global-set-key (kbd "C-c n") #'rh/org-roam-menu))
+  ;; Bind the menu to C-c n m (not bare C-c n, which would intercept all C-c n * prefixes).
+  ;; Users can also press C-c n ? to invoke the menu — see direct keybindings below.
+  (global-set-key (kbd "C-c n m") #'rh/org-roam-menu))
 
 ;;; ─────────────────────────────────────────────────────────────────────────────
 ;;; 2. Hydra fallback (if transient is unavailable — Emacs < 28)
@@ -138,7 +139,7 @@
       ("t"   org-roam-tag-add             "add tag")
       ("q"   nil                          "quit"))
 
-    (global-set-key (kbd "C-c n") #'rh/hydra-org-roam/body)))
+    (global-set-key (kbd "C-c n m") #'rh/hydra-org-roam/body)))
 
 ;;; ─────────────────────────────────────────────────────────────────────────────
 ;;; 3. Individual direct keybindings (always active, bypass the menu)
@@ -147,6 +148,7 @@
 ;; These work even if you haven't opened the transient/hydra menu yet.
 
 ;; Most-used — single keystroke after C-c n:
+(global-set-key (kbd "C-c n m")   #'rh/org-roam-menu)      ; "m" = menu
 (global-set-key (kbd "C-c n n")   #'org-roam-node-find)
 (global-set-key (kbd "C-c n SPC") #'org-roam-node-find)
 (global-set-key (kbd "C-c n i")   #'org-roam-node-insert)
@@ -253,6 +255,7 @@
 (with-eval-after-load 'which-key
   (which-key-add-key-based-replacements
     "C-c n"   "Org-Roam"
+    "C-c n m" "open command menu"
     "C-c n n" "find/create note"
     "C-c n i" "insert link"
     "C-c n l" "backlinks panel"
